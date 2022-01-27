@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    New Book
+{% endblock %}
+
+{% block main %}
+    <form action="/newbook" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="book_title" placeholder="Book Title" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="book_author" placeholder="Book Author" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="publish_year" placeholder="Publish Year" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="language" placeholder="Language" type="text">
+        </div>
+        <button class="btn btn-dark" type="submit">Add New Book</button>
+    </form>
+{% endblock %}

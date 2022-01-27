@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Remove
+{% endblock %}
+
+{% block main %}
+    <form action="/remove" method="post">
+        <div class="form-group">
+            <input class="form-control" autocomplete="off" name="book_id" placeholder="Book_ID" type="number">
+        </div>
+        <button class="btn btn-dark" type="submit">Remove</button>
+    </form>
+{% endblock %}
